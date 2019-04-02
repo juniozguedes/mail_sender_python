@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>One Page Wonder - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/one-page-wonder.css" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-target=".masthead" data-offset="50">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Memorial Saúde Tijuca</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="mymasthead collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">(21)96504-4842</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Faça seu orçamento</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead text-center text-white">
+    <div class="masthead-content">
+      <div class="mymasthead col-12 contato" id="contato">
+        <h3 class="masthead-subheading mb-0">Planos acessíveis</h2>
+        <a href="#planos" class="btn btn-primary btn-xl rounded-pill mt-5">Confira</a>
+      </div>
+    </div>
+    <div class=" mymasthead col-md-4 offset-md-8">
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <input type="nome" class="form-control" id="inputEmail4" placeholder="SEU NOME">
+          </div>
+          <div class="form-group col-md-12">
+            <input type="telefone" class="form-control" id="inputEmail4" placeholder="SEU TELEFONE">
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" id="inputAddress" placeholder="SEU E-MAIL">
+        </div>
+        <div class="form-group col-md-12">
+          <select id="inputState" class="form-control">
+            <option selected>BAIRRO</option>
+            <option>Tijuca</option>
+            <option>Maracanã</option>
+            <option>Rio Comprido</option>
+            <option>Grajaú</option>
+            <option>Alto da Boa Vista</option>
+            <option>Andaraí</option>
+          </select>
+        </div>        
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>    
+    </div>
+  </header>
+
+  <section>
+    <div id="planos" class="planos container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="img/01.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <h2 class="display-4">Plano Light</h2>
+            <p>Cobertura de consultas completas em todas as especialidades médicas, todos os tipos de exames, emergências 24 horas, além de fisioterapia, acupuntura, nutricionista, psicólogo e fonoaudiólogo sem pagar nada extra, inclusive 12 horas de enfermaria com todos os medicamentos necessários.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="img/02.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5">
+            <h2 class="display-4">Plano Life</h2>
+            <p>Temos também uma opção mais completa com aconselhamento médico por telefone, serviço de ambulância na residência em caso de emergência e excelentes descontos nas drogarias Pacheco.
+            O melhor custo benefício, você não encontrará um valor menor que o nosso com o que oferecemos em nosso plano, trabalhamos também com plano familiar com desconto!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-black">
+    <div class="container">
+      <p class="m-0 text-center text-white small">Memorial Saúde Tijuca 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script type="text/javascript">
+  // Add scrollspy to <body>
+$('body').scrollspy({target: ".planos", offset: 50});
+$('body').scrollspy({target: ".contato", offset: 50});
+// Add smooth scrolling on all links inside the navbar
+$(".mymasthead a").on('click', function(event) {
+
+  // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 800, function(){
+
+    // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+
+  } // End if
+
+});
+</script>
+</body>
+
+</html>
