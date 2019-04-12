@@ -19,13 +19,13 @@ def send_mail():
         telefone = request.form['telefone']
         message = bairro+'    '+email+'    '+nome+'    '+telefone
         sender_email = "gavsaude@gmail.com"
-        password = "" #input your password here
+        password = "" #PUT YOUR PASSWORD HERE
         mail = smtplib.SMTP('smtp.gmail.com', 587)
         mail.ehlo() #Identify computer
         mail.starttls()
         mail.login(sender_email, password)
         header = 'To:'+sender_email+'\n'+'Subject:'+nome+'\n'
         message = header+message
-        mail.sendmail('gavsaude@gmail.com','gavsaude@gmail.com',message)
+        mail.sendmail('gavsaude@gmail.com','gavsaude@gmail.com',message) #Here goes your e-mail
 
         return make_response(render_template('index.html'), 200) #Force 200
